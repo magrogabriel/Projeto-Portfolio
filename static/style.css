@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 html, body {
-    font-family: Poppins, Arial;
+    font-family: 'Lato', sans-serif;
     width: 100%;
     height: 100%;
 }
@@ -19,11 +18,14 @@ html, body {
     z-index: 9997;
 }
 
+#header .profile {
+    margin-bottom: 4rem;
+}
 #header .profile img {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid #2c2f3f;
+    border: 7px solid #2c2f3f;
     border-radius: 50%;
 }
 
@@ -54,7 +56,11 @@ html, body {
 }
 
 .nav-menu {
-    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1.5rem;
+    margin-left: 1rem; */
 }
 
 .nav-menu a, .nav-menu a:focus {
@@ -91,7 +97,8 @@ html, body {
 }
 
 section#inicio{
-    background-image: url("./img/background-main-4.jpg");
+    background-image: url("./img/background-main-5.jpg");
+    /* background-color: #d1dbdd; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -100,13 +107,14 @@ section#inicio{
     height: 100vh;
 }
 
+
 section#inicio h2{
     font-size: 4.8rem;
     
 }
 
 section#inicio span#subtitle{
-    margin-right: 13rem;
+    /* margin-right: 13rem; */
     font-size: 1.5rem;
 }
 
@@ -121,4 +129,66 @@ section#inicio div#arraste {
 section#inicio div#arraste a {
    text-decoration: none;
    color: #fff;
+}
+i.menu-mobile {
+    position: fixed;
+    color: white;
+    background-color: #252c90;
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    z-index: 9998;;
+    width: 50px;
+    height: 50x;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-nav-active {
+    overflow: hidden;
+}
+
+.menu-nav-active #header {
+    left: 0;
+}
+@media (max-width: 1024px) {
+
+    #header {
+        left: -300px;
+    }
+    i.menu-mobile {
+        display: flex;
+    }
+    section#inicio h2 {
+        font-size: 3.5rem;
+    }
+    section#inicio span#subtitle{
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    #main{
+        margin-left: 0;
+    }
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 .8rem #00000050;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #062349;
+}
+
+.section-bg{
+    background-color:#f0f0ff
 }
