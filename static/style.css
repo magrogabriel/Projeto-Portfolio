@@ -109,13 +109,13 @@ section#inicio{
 
 
 section#inicio h2{
-    font-size: 4.8rem;
+    font-size: 6rem;
     
 }
 
 section#inicio span#subtitle{
     /* margin-right: 13rem; */
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 .text-shadow {
@@ -288,5 +288,38 @@ i.menu-mobile {
 
     .curriculo-pro {
         margin-top: 2rem;
+    }
+
+}
+#btn-enviar-loader {
+    display: none;
+    margin-top: 1.5rem;
+}
+
+#alerta {
+    position: fixed;
+    z-index: 9999;
+    top: 30px;
+    right: 30px;
+}
+
+#footer {
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9998;
+    background-color: #021124;
+    transition: .3s;
+}
+
+@media (max-width: 1012px) {
+    #footer {
+        position: static;
+        width: auto;
+        padding: 20px 15px;
     }
 }
