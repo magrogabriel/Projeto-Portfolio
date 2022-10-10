@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
 html, body {
     font-family: 'Lato', sans-serif;
     width: 100%;
@@ -6,13 +11,17 @@ html, body {
 }
 
 #header {
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     background: #021124;
     overflow-y: auto;
-    width: 300px;
+    width: 47.5vh;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
     z-index: 9997;
@@ -57,6 +66,7 @@ html, body {
 
 .nav-menu {
     display: flex;
+    margin-right: 18px;
     justify-content: center;
     align-items: center;
     /* padding: 1.5rem;
@@ -92,14 +102,17 @@ html, body {
     color: #149ddd;
 }
 
+.nav-list {
+    list-style:none;
+}
 #main {
-    margin-left: 300px;
+    margin-left: 47.5vh;
 }
 
 section#inicio{
     background-image: url("./img/background-main-5.jpg");
     /* background-color: #d1dbdd; */
-    background-repeat: no-repeat;
+    background-repeat: no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -109,13 +122,13 @@ section#inicio{
 
 
 section#inicio h2{
-    font-size: 6rem;
+    font-size: 4.8rem;
     
 }
 
 section#inicio span#subtitle{
     /* margin-right: 13rem; */
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .text-shadow {
@@ -124,6 +137,7 @@ section#inicio span#subtitle{
 
 section#inicio div#arraste {
     width: 9rem;
+    z-index: 9998;
 }
 
 section#inicio div#arraste a {
@@ -157,7 +171,7 @@ i.menu-mobile {
 @media (max-width: 1024px) {
 
     #header {
-        left: -300px;
+        left: -47.5vh;
     }
     i.menu-mobile {
         display: flex;
@@ -239,6 +253,7 @@ i.menu-mobile {
 
 
 
+
 .carousel-indicators {
     margin-bottom: -35px;
 }
@@ -249,15 +264,15 @@ i.menu-mobile {
     transition: 1s;
 }
 [data-anime="down"] {
-    transform: translate3d(0,-100%,0)
+    transform: translate3d(0,-25%,0)
 }
 
 [data-anime="up"] {
-    transform: translate3d(0,100%,0)
+    transform: translate3d(0,50%,0)
 }
 
 [data-anime="left"] {
-    transform: translate3d(-100%,0,0)
+    transform: translate3d(-50%,0,0)
 }
 
 [data-anime="right"] {
@@ -311,15 +326,16 @@ i.menu-mobile {
     left: 0;
     bottom: 0;
     width: 300px;
-    z-index: 9998;
+    z-index: 9999;
     background-color: #021124;
     transition: .3s;
 }
 
-@media (max-width: 1012px) {
+@media (max-width: 1280px) {
     #footer {
         position: static;
         width: auto;
         padding: 20px 15px;
     }
+
 }
