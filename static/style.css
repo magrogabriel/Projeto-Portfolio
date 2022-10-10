@@ -21,7 +21,7 @@ html, body {
     bottom: 0;
     background: #021124;
     overflow-y: auto;
-    width: 47.5vh;
+    width: 45vh;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
     z-index: 9997;
@@ -106,7 +106,7 @@ html, body {
     list-style:none;
 }
 #main {
-    margin-left: 47.5vh;
+    margin-left: 45vh;
 }
 
 section#inicio{
@@ -171,7 +171,7 @@ i.menu-mobile {
 @media (max-width: 1024px) {
 
     #header {
-        left: -47.5vh;
+        left: -45vh;
     }
     i.menu-mobile {
         display: flex;
@@ -325,7 +325,7 @@ i.menu-mobile {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 45vh;
     z-index: 9999;
     background-color: #021124;
     transition: .3s;
@@ -335,7 +335,7 @@ i.menu-mobile {
     #footer {
         position: static;
         width: auto;
-        padding: 20px 15px;
+        padding: 20px 15px 8px 15px;
     }
 
 }
